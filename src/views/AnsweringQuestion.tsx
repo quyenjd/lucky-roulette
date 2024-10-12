@@ -15,7 +15,7 @@ export const ShadowedButton = (props: ButtonProps & { index: number }) => {
   return (
     <Button
       className={classNames(
-        'w-1/2 text-3xl md:text-4xl py-4 px-5 normal-case',
+        'w-1/2 text-2xl md:text-3xl py-4 px-5 normal-case',
         status !== 'unanswered' && 'pointer-events-none opacity-60'
       )}
       color={
@@ -56,7 +56,7 @@ const AnsweringQuestion = () => {
           </div>
 
           <Typography
-            className="text-2xl sm:text-4xl md:text-5xl text-center pb-2 md:pb-6 font-semibold"
+            className="text-2xl sm:text-3xl md:text-4xl text-center pb-2 md:pb-6 font-semibold"
             variant="h2"
           >
             {questionState.isAnswering.title}

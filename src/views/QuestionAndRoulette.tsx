@@ -24,10 +24,10 @@ const QuestionAndRoulette = () => {
   return (
     <View viewId="question-and-roulette">
       <Stack className="h-full w-full" direction="row" alignItems="center">
-        <div className="w-2/5">
+        <div className="w-[45%]">
           <Questions />
         </div>
-        <div className="w-3/5">
+        <div className="w-[55%]">
           <Roulette />
         </div>
       </Stack>
