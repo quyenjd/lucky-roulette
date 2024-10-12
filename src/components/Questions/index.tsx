@@ -26,7 +26,7 @@ const Questions = () => {
   return (
     <Stack spacing={4} alignItems="center">
       <Typography className="text-3xl lg:text-4xl font-semibold" variant="h2">
-        Select a question below.
+        Select a question below 🥰
       </Typography>
 
       {Array.from({ length: questions.length }).map(
