@@ -41,8 +41,8 @@ const QuestionAndRoulette = () => {
         </DialogTitle>
         <DialogContent className="text-3xl px-8 pt-2 pb-6 bg-[#FAFAD2]">
           <Stack spacing={3} alignItems="center">
-            <p>
-              Our lucky 🎁 for you is <b>{rouletteState.showingPresent?.title}</b>!
+            <p className="whitespace-nowrap">
+              Lucky 🎁 for you is <b>{rouletteState.showingPresent?.title}</b>!
             </p>
             <Button
               className="normal-case text-xl px-6 py-2"
