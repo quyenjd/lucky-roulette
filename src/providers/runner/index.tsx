@@ -195,7 +195,7 @@ const Runner = ({ children }: PropsWithChildren) => {
           spinRoulette,
         }}
       >
-        <div className="h-screen w-screen relative">{children}</div>
+        <div className="h-screen w-screen overflow-hidden relative">{children}</div>
         <Sfx />
       </RunnerContext.Provider>
     </ThemeProvider>
