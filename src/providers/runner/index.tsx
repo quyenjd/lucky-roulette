@@ -3,7 +3,7 @@
 import { getPresents, Present } from '@/data/presents'
 import { getQuestions, Question } from '@/data/questions'
 import { createTheme, ThemeProvider } from '@mui/material'
-import { isEqual, random } from 'lodash'
+import random from 'lodash/random'
 import {
   createContext,
   PropsWithChildren,
@@ -12,6 +12,7 @@ import {
   useEffect,
   useState,
 } from 'react'
+import Sfx from './sfx'
 
 export type View = 'question-and-roulette' | 'correct-answer' | 'answering-question'
 
@@ -195,6 +196,7 @@ const Runner = ({ children }: PropsWithChildren) => {
         }}
       >
         <div className="h-screen w-screen relative">{children}</div>
+        <Sfx />
       </RunnerContext.Provider>
     </ThemeProvider>
   )

@@ -21,7 +21,8 @@
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.79.5",
-    "spin-wheel": "^5.0.2"
+    "spin-wheel": "^5.0.2",
+    "use-sound": "^4.0.3"
   },
   "devDependencies": {
     "@types/lodash": "^4.17.10",
