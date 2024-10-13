@@ -43,7 +43,7 @@ const Roulette = () => {
       lineColor: '#fff',
       image: rouletteCenterRef,
       overlayImage: rouletteOverlayRef,
-      items: rouletteState.presents.map(() => ({ label: '🎁' })),
+      items: Array.from({ length: rouletteState.presents.length + 1 }).map(() => ({ label: '🎁' })),
       onRest: () => doneSpinningRef.current(),
       onSpin: () => spinRouletteRef.current(),
     }),
@@ -71,7 +71,7 @@ const Roulette = () => {
 
   useEffect(() => {
     if (rouletteState.spinToPresent != null) {
-      wheel.spinToItem(rouletteState.spinToPresent, 10000, true, 20)
+      wheel.spinToItem(rouletteState.spinToPresent, 13000, true, 25)
     }
   }, [rouletteState.isSpinning])
 

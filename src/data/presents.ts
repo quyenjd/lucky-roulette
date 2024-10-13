@@ -9,13 +9,12 @@ const Presents: Present[] = [
   { title: 'Jasmine Candle' },
   { title: 'Heart Night Light' },
   { title: 'Bear Night Light' },
-  { title: 'Round of Applause' },
+  { title: 'Lollipop' },
   { title: 'Free Parking' },
   { title: 'Macaron Key Ring' },
-  { title: 'Handbook' },
-  { title: 'Handbook' },
-  { title: 'Snack' },
-  { title: 'Snack' },
+  { title: 'Lollipop' },
+  { title: 'Banana Key Ring' },
+  { title: 'Banana Key Ring' },
 ]
 
 export const getPresents = () => Promise.resolve(Presents)
