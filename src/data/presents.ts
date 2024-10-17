@@ -5,16 +5,16 @@ export type Present = {
 }
 
 const Presents: Present[] = [
-  { title: 'Orange Candle' },
-  { title: 'Jasmine Candle' },
-  { title: 'Heart Night Light' },
-  { title: 'Bear Night Light' },
-  { title: 'Lollipop' },
-  { title: 'Free Parking' },
-  { title: 'Macaron Key Ring' },
-  { title: 'Lollipop' },
-  { title: 'Banana Key Ring' },
-  { title: 'Banana Key Ring' },
+  { title: 'orange-candle' },
+  { title: 'jasmine-candle' },
+  { title: 'heart-night-light' },
+  { title: 'baymax-night-light' },
+  { title: 'lollipop' },
+  { title: 'free-parking' },
+  { title: 'macaron-key-ring' },
+  { title: 'lollipop' },
+  { title: 'banana-key-ring' },
+  { title: 'banana-key-ring' },
 ]
 
 export const getPresents = () => Promise.resolve(Presents)

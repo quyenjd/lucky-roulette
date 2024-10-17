@@ -36,16 +36,22 @@ const QuestionAndRoulette = () => {
         open={Boolean(rouletteState.showingPresent)}
         PaperProps={{ className: 'animate-wiggle w-1/2' }}
       >
-        <DialogTitle className="text-center text-4xl px-8 pt-6 font-bold bg-[#FAFAD2]">
+        <DialogTitle className="text-center text-2xl md:text-4xl px-8 pt-6 font-bold bg-[#FAFAD2]">
           Congratulations!!!
         </DialogTitle>
-        <DialogContent className="text-3xl px-8 pt-2 pb-6 bg-[#FAFAD2]">
+        <DialogContent className="text-lg md:text-2xl px-8 pt-2 pb-6 bg-[#FAFAD2]">
           <Stack spacing={3} alignItems="center">
-            <p className="whitespace-nowrap">
-              Lucky 🎁 for you is <b>{rouletteState.showingPresent?.title}</b>!
-            </p>
+            <p className="whitespace-nowrap">Lucky 🎁 for you is:</p>
+            <div className="max-w-[32rem] w-full">
+              <img
+                alt={rouletteState.showingPresent?.title}
+                height="auto"
+                width="100%"
+                src={`/presents/${rouletteState.showingPresent?.title}.jpg`}
+              />
+            </div>
             <Button
-              className="normal-case text-xl px-6 py-2"
+              className="normal-case text-lg md:text-xl px-6 py-2"
               variant="outlined"
               color="primary"
               onClick={() => closeShowingPresentDialog()}
